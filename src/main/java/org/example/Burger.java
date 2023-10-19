@@ -12,6 +12,18 @@ public class Burger {
         this.calories = calories;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrices(double prices) {
+        this.prices = prices;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
     public String getName() {
         return name;
     }
