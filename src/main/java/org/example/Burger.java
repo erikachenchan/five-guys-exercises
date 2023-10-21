@@ -35,4 +35,13 @@ public class Burger {
     public int getCalories() {
         return calories;
     }
+
+    @Override
+    public String toString() {
+        return "Burger{" +
+                "name='" + name + '\'' +
+                ", prices=" + prices +
+                ", calories=" + calories +
+                '}';
+    }
 }

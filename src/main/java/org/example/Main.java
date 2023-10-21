@@ -1,9 +1,15 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        Burger burger = new Burger("Hamburger", 6.19, 700);
+        Scanner scanner = new Scanner(System.in);
+        BurgerManager burgerManager = new BurgerManager();
+
+        BurgerUI burgerUI = new BurgerUI(scanner, burgerManager);
+        System.out.println("What's your order?");
+        burgerUI.start();
     }
 }
